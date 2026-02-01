@@ -1,0 +1,131 @@
+body {
+    font-family: 'Inter', sans-serif;
+  margin: 0;
+     background-color: #eaf0f8;   /* same light grey as picture */
+width:100%;
+}
+#hero{
+  display: flex;
+  justify-content: space-around;
+  Width:100%;
+Height:86px;
+background-color: white;
+}
+#logo{
+  display: flex;   
+ align-items: center;
+ gap: 20px;
+ color:rgb(114, 112, 112);
+ background-color: white;
+ padding-right: 20px;
+}
+.logo1{
+    margin-top: 0px;
+}
+#hero1{
+    border-radius: 5px;
+  gap: 0px;
+  display: flex;
+align-items: center;
+ overflow: hidden; 
+}
+#heroo{
+  align-items: center;
+  display: flex;
+
+}
+#input{
+  padding: 6px 10px 6px 12px;
+  border:1.8px solid #4F8DF7;
+      border-radius: 0px;
+
+}
+#Search{
+  padding: 7px 110px 7px 7px;
+  border-color: #4F8DF7;
+outline: none;
+    border-radius: 0px;
+ border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-right: 1px ;  
+}
+#button{
+  padding: 7px 15px 7px 12px;
+color: white;
+background-color: #4F8DF7 ;
+  border-color: #4F8DF7;
+    border-radius: 0px;
+border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+#category{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  Width:100%;
+Height:56px;
+Top:86px;
+gap: 280px;
+ border-top: 1.5px solid #d9e1ec;
+  border-bottom: 1.5px solid #d9e1ec;
+  background-color: white;
+padding-left: 0px;
+gap: 150px;
+
+}
+#category1{
+   display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#category2{
+   display: flex;
+  align-items: center;
+    gap: 20px;
+
+}
+#line{
+    color: gray;
+        margin: 20px 0 20px 90px;
+
+}
+#line a{
+    text-decoration: none;
+    color: gray;
+}
+#height{
+      width: 240px;
+    margin-left: 90px;
+
+}
+#section{
+    border-bottom:1px solid gray;
+      width: 240px;
+
+}
+#section1{
+    display: inline;
+font-size: 20px;
+font-weight: 600;
+ display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#section2{
+color: gray;
+}
+.para{
+      display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 0;
+    left: 0;
+}
+.check{
+  width: 16px;
+    height: 16px;
+border-radius: 5px;}
+#brand,#features{
+    border-bottom:1px solid gray;
+
+}

@@ -78,6 +78,10 @@ gap: 150px;
   align-items: center;
   gap: 20px;
 }
+#category1 a{
+  text-decoration: none;
+  color: black;
+}
 #category2{
    display: flex;
   align-items: center;
@@ -530,10 +534,14 @@ background-color: white;
   padding: 30px 90px 30px 90px;
 }
 .lastlist{
-list-style: none;
-color: gray;
-gap: 10px;
+gap: 50px;
 
+}
+.lastlist a{
+  display: block;
+  margin-bottom: 5px;
+color: gray;
+text-decoration: none;
 }
 #last i{
    width: 40px;
@@ -554,7 +562,6 @@ gap: 10px;
   width: 300px;
 }
 .last1 p{
-  padding-left: 40px;
 font-size: 20px;
 font-weight: 500;
 }
