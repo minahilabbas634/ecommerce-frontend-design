@@ -513,3 +513,45 @@ font-weight: 500;
   justify-content: space-between;
   display: flex;
 }
+#pagination-bar{
+  display: flex;
+  align-items: center;
+  margin: 20px 7%;
+  padding: 10px 15px;
+  border-radius: 6px;
+  gap: 20px;
+   justify-content: flex-end; 
+}
+
+/* Left side: Show 10 */
+.show{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.show select{
+  border: 1.5px solid #d9e1ec;
+  padding: 7px 10px;
+  border-radius: 5px;
+}
+
+/* Right side: page numbers */
+.pages{
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+
+.pages button{
+  border: 1.5px solid #d9e1ec;
+  background: white;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pages .active{
+  background: rgb(185, 185, 185);
+  color: black;
+}
