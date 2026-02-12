@@ -488,3 +488,17 @@ font-weight: 500;
   background: rgb(185, 185, 185);
   color: black;
 }
+/* This highlights the active icon */
+.active-view {
+    background-color: #EEEEEE !important; /* Light gray background */
+    color: #0d6efd !important;             /* Blue color for FontAwesome icons */
+}
+
+/* If the active icon is an SVG image (like your grid icon) */
+img.active-view {
+    filter: invert(31%) sepia(94%) saturate(4510%) hue-rotate(209deg) brightness(101%) contrast(101%);
+}
+/* Add this to style2.css and style3.css */
+#icon, img[src*="7626499591553666161.svg"] {
+    cursor: pointer;
+}

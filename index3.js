@@ -1,25 +1,11 @@
-
-const rangeMin = document.getElementById("rangeMin");
-const rangeMax = document.getElementById("rangeMax");
-const minPrice = document.getElementById("minPrice");
-const maxPrice = document.getElementById("maxPrice");
-
-rangeMin.addEventListener("input", ()=>{
-  minPrice.value = rangeMin.value;
-});
-
-rangeMax.addEventListener("input", ()=>{
-  maxPrice.value = rangeMax.value;
-});
-window.onload = function() {
-    // 1. Find the buttons
-    const gridBtn = document.querySelector('img[src*="7626499591553666161"]');
+ window.onload = function() {
+ const gridBtn = document.querySelector('img[src*="7626499591553666161"]');
     const listBtn = document.querySelector('#icon');
 
     // 2. Identify which page we are on to highlight the correct icon
     const currentPage = window.location.pathname;
 
-   
+  
 
     // 3. Navigation Logic
     if (gridBtn) {
@@ -37,5 +23,4 @@ window.onload = function() {
 
         };
     }
-};
-
+ }

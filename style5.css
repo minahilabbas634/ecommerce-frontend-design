@@ -1,0 +1,188 @@
+body {
+    font-family: 'Inter', sans-serif;
+  margin: 0;
+     background-color: #eaf0f8;   /* same light grey as picture */
+width:100%;
+}
+#hero{
+  display: flex;
+  justify-content: space-around;
+  Width:100%;
+Height:86px;
+background-color: white;
+}
+#logo{
+  display: flex;   
+ align-items: center;
+ gap: 20px;
+ color:rgb(114, 112, 112);
+ background-color: white;
+ padding-right: 20px;
+}
+.logo1{
+    margin-top: 0px;
+}
+#hero1{
+    border-radius: 5px;
+  gap: 0px;
+  display: flex;
+align-items: center;
+ overflow: hidden; 
+}
+#heroo{
+  align-items: center;
+  display: flex;
+
+}
+#input{
+  padding: 6px 10px 6px 12px;
+  border:1.8px solid #4F8DF7;
+      border-radius: 0px;
+
+}
+#Search{
+  padding: 7px 110px 7px 7px;
+  border-color: #4F8DF7;
+outline: none;
+    border-radius: 0px;
+ border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-right: 1px ;  
+}
+#button{
+  padding: 7px 15px 7px 12px;
+color: white;
+background-color: #4F8DF7 ;
+  border-color: #4F8DF7;
+    border-radius: 0px;
+border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+#cart{
+    margin: 20px 7%;
+}
+#contain{
+        margin: 20px 7%;
+  border: 1.5px solid #d9e1ec;
+border-radius: 5px;
+width: 70%;
+background-color: white;
+    padding-bottom: 20px;
+padding-right: 20px;
+}
+#image{
+  width: 60px;
+  height: 60px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* resize images properly */
+#image img{
+  width: 50px;
+  height: auto;
+}
+#container{
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+    margin-left: 20px;
+    justify-content: space-between;
+    border-bottom: 1.5px solid #eaf0f8;
+}
+#text{
+    font-size: px;
+    font-weight: 550;
+    margin-bottom: 20px;
+}
+#text1{
+        margin-top: 10px;
+
+    color: rgb(171, 167, 167);
+}
+#text2{
+    color: rgb(171, 167, 167);
+}
+#btn1{
+    margin-top: 10px;
+    color: red;
+    padding: 8px 5px;
+    border-radius: 5px;
+    font-weight: 500;
+    background-color: white;
+  border: 1.5px solid #ddd;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+#btn2{
+    margin-top: 10px;
+    color: blue;
+    padding: 8px 5px;
+    border-radius: 5px;
+    font-weight: 530;
+    background-color: white;
+  border: 1.5px solid #ddd;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* The button look from your screenshot */
+.dropdown-toggle {
+  background-color: white;
+  border: 1px solid #d9e1ec;
+  border-radius: 6px;
+  padding: 6px 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+/* Apply light grey background when the dropdown is open */
+/* Hide the menu by default and remove bullets */
+.qtyMenu {
+    display: none; 
+    position: absolute;
+    list-style: none; /* Removes those bullet dots in your screenshot */
+    background: white;
+    border: 1px solid #d9e1ec;
+    border-radius: 6px;
+    padding: 5px 0;
+    margin-top: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 10;
+    min-width: 100px;
+}
+
+/* Show the menu when JS adds this class */
+.qtyMenu.show {
+    display: block;
+}
+
+/* The light grey background you wanted */
+.active-grey {
+    background-color: #EEEEEE !important;
+}
+
+/* Style the individual options */
+.qtyMenu li {
+    padding: 8px 15px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.qtyMenu li:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-menu li:hover { background-color: #f8f9fa; color: #0d6efd; }
