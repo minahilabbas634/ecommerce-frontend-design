@@ -62,7 +62,6 @@ border-top-right-radius: 8px;
     margin: 20px 7%;
 }
 #contain{
-        margin: 20px 7%;
   border: 1.5px solid #d9e1ec;
 border-radius: 5px;
 width: 70%;
@@ -129,60 +128,265 @@ padding-right: 20px;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 .dropdown-container {
-  position: relative;
-  display: inline-block;
-  margin-right: 20px;
+    position: relative;
+    display: inline-block;
 }
 
-/* The button look from your screenshot */
-.dropdown-toggle {
-  background-color: white;
-  border: 1px solid #d9e1ec;
-  border-radius: 6px;
-  padding: 6px 12px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: background-color 0.2s;
+.qtyBtn {
+    background-color: white;
+    border: 1px solid #d9e1ec;
+    border-radius: 6px;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    min-width: 100px;
+    transition: background-color 0.2s;
 }
 
-/* Apply light grey background when the dropdown is open */
-/* Hide the menu by default and remove bullets */
+.qtyBtn i {
+    color: #8B96A5; /* Grey chevron color */
+    font-size: 12px;
+}
+
+/* The light grey background from your image */
+.active-grey {
+    background-color: #EEEEEE !important; 
+}
+
 .qtyMenu {
-    display: none; 
+    display: none; /* Hidden by default */
     position: absolute;
-    list-style: none; /* Removes those bullet dots in your screenshot */
+    top: 100%;
+    right: 0;
     background: white;
     border: 1px solid #d9e1ec;
     border-radius: 6px;
-    padding: 5px 0;
-    margin-top: 5px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    z-index: 10;
-    min-width: 100px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    list-style: none; /* REMOVES BULLET POINTS */
+    padding: 0;       /* REMOVES PADDING */
+    margin: 5px 0 0 0;
+    min-width: 100%;
+    z-index: 100;     /* Sits on top of everything */
 }
 
-/* Show the menu when JS adds this class */
+/* Class added by JS to show the menu */
 .qtyMenu.show {
     display: block;
 }
 
-/* The light grey background you wanted */
-.active-grey {
-    background-color: #EEEEEE !important;
-}
-
-/* Style the individual options */
 .qtyMenu li {
-    padding: 8px 15px;
+    padding: 10px 15px;
     cursor: pointer;
     white-space: nowrap;
+    font-size: 14px;
+    border-bottom: 1px solid #f8f9fa;
+}
+
+.qtyMenu li:last-child {
+    border-bottom: none;
 }
 
 .qtyMenu li:hover {
-    background-color: #f1f1f1;
+    background-color: #f8f9fa;
+    color: #0d6efd;
 }
+.button{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 10px;
+}
+#btn{
+    padding: 8px 6px;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
 
-.dropdown-menu li:hover { background-color: #f8f9fa; color: #0d6efd; }
+}
+#btnn{
+padding: 8px 6px;
+    color: red;
+    background-color: white;
+    border: 1.5px solid #d9e1ec;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+#coupon{
+    padding: 20px;
+        border: 1.5px solid #d9e1ec;
+background-color: white;
+border-radius: 5px;
+}
+#coupon span{
+    color: gray;
+}
+#coupon input{
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+margin-top: 10px;
+        border: 1.5px solid #d9e1ec;
+background-color: white;
+
+}
+#coupon button{
+    color: blue;
+    background-color: white;
+    border-left: none;
+    border-top: 1.5px solid #d9e1ec;
+        border-bottom: 1.5px solid #d9e1ec;
+margin-top: 10px;
+
+    border-right:1.5px solid #d9e1ec ;
+    border-top-right-radius:5px ;
+        border-bottom-right-radius:5px ;
+
+}
+#shop{
+    background-color: white;
+    margin-top: 10px;
+    border: 1.5px solid #d9e1ec;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-left: 25px;
+    font-size: 20px;
+    padding-right: 20px;
+}
+#spec{
+    border-bottom:1.5px solid #d9e1ec ;
+    padding-bottom: 20px;
+}
+#spec td:first-child{
+  color: #666;
+  width: 70%;
+}
+#spec2  td:first-child{
+      width: 75%;
+      padding-top: 10px;
+      font-weight: 560;
+}
+#spec2{
+    padding-top: 10px;
+      font-weight: 560;
+}
+#shop button{
+    width: 100%;
+    color: white;
+    background-color: rgb(9, 181, 9);
+    padding: 13px;
+   border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+#icon i{
+      width: 40px;
+  height: 40px;
+  background: #d0d4da;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+border: none;
+  color: gray;
+}
+#save{
+    margin: 20px 7%;
+    border-radius: 5px;
+        border:1.5px solid #d9e1ec ;
+    background-color: white;
+padding: 10px 20px;
+margin-top: 30px;
+}
+#savv{
+    display: flex;
+      justify-content: space-around;
+}
+.save1 img{
+width: 180px;
+height: auto;
+
+}
+.img{
+        border:1.5px solid #d9e1ec ;
+padding: 20px;
+border-radius: 5px;
+margin-bottom: 10px;
+}
+.save1 button{
+    padding: 8px 8px;
+    color: blue;
+    border: 1.5px solid #d9e1ec ;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+#discount{
+ margin: 20px 7%;
+ display: flex; 
+ align-items: center;
+ justify-content: space-between;
+ background-color: rgb(55, 55, 226);
+ padding: 40px 40px 40px 40px;
+ border-radius: 5px;
+ margin-bottom: 60px;
+}
+#but button{
+color: white;
+background-color: rgb(236, 164, 7);
+padding: 10px 20px;
+border-color: rgb(236, 164, 7);
+border-radius: 5px;
+}
+#last{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  background-color: white;
+  padding: 30px 90px 30px 90px;
+}
+.lastlist{
+gap: 50px;
+
+}
+.lastlist a{
+  display: block;
+  margin-bottom: 5px;
+color: gray;
+text-decoration: none;
+}
+#last i{
+   width: 40px;
+  height: 40px;
+  background: #a7adb4;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border:2px solid white;
+  color: white;
+}
+#logo{
+  display: flex;
+  gap: 3px;
+}
+.last1{
+  width: 300px;
+}
+.last1 p{
+font-size: 20px;
+font-weight: 500;
+}
+#footer{
+  margin:  20px 90px 20px 90px ;
+  justify-content: space-between;
+  display: flex;
+}
